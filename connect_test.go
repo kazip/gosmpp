@@ -1,7 +1,7 @@
 package gosmpp
 
 import (
-	"github.com/linxGnu/gosmpp/pdu"
+	"github.com/kazip/gosmpp/pdu"
 	"sync/atomic"
 	"testing"
 

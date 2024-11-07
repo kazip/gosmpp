@@ -5,7 +5,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/linxGnu/gosmpp/data"
+	"github.com/kazip/gosmpp/data"
 
 	"github.com/stretchr/testify/require"
 )
