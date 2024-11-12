@@ -81,7 +81,7 @@ func (c *BindResp) Marshal(b *ByteBuffer) {
 func (c *BindResp) Unmarshal(b *ByteBuffer) error {
 	return c.base.unmarshal(b, func(w *ByteBuffer) (err error) {
 		if c.CommandID == data.BIND_TRANSCEIVER_RESP || c.CommandStatus == data.ESME_ROK {
-			c.SystemID, err = w.ReadCString()
+			c.SystemID, _ = w.ReadCString()
 		}
 		return
 	})
